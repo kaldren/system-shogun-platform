@@ -14,6 +14,7 @@
 - `specs/` — feature specs (see below). `specs/TEMPLATE.md` is the required shape.
 - `design-system.md` — the binding source of truth for frontend look-and-feel (fonts, colors, spacing, component conventions). The frontend agent must follow it for every UI change.
 - `docs/` — general documentation, ADRs, etc.
+- `.githooks/` — local git hooks (`pre-push` runs gitleaks and blocks pushes containing secrets; see README.md "Development setup"). Backed up server-side by `.github/workflows/secret-scan.yml` and GitHub push protection.
 
 ## Spec-driven development — hard rule
 

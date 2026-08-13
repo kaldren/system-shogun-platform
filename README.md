@@ -573,6 +573,17 @@ The long-term goal is for SystemShogun to become a place where engineers can:
 
 ---
 
+## Development setup
+
+Before committing anything, wire up the local secret-scanning hook (one-time, per clone):
+
+1. Install [gitleaks](https://github.com/gitleaks/gitleaks/releases) — e.g. `winget install Gitleaks.Gitleaks` (Windows), `brew install gitleaks` (macOS), or `scoop install gitleaks`.
+2. Run `git config core.hooksPath .githooks` in the repo root.
+
+This enables a `pre-push` hook that blocks pushes containing secrets (API keys, tokens, credentials, etc.) and refuses to push at all if gitleaks isn't installed. It's a fast local check; a GitHub Actions workflow (`.github/workflows/secret-scan.yml`) and GitHub push protection run the same scan server-side as a backstop, so secrets are still caught even if the local hook is skipped or never installed.
+
+---
+
 ## SystemShogun
 
 **Think before you build. Design before you scale.**

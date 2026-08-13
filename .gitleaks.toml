@@ -1,0 +1,13 @@
+title = "SystemShogun gitleaks config"
+
+# Start from gitleaks' built-in default ruleset (secret patterns for AWS, Azure,
+# GitHub, generic API keys/tokens, private keys, etc.) and layer repo-specific
+# allowlisting on top as false positives come up.
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Repo-specific false positives"
+paths = [
+  '''(?i)\.gitleaks\.toml''',
+]
