@@ -24,12 +24,12 @@ Only once both checks pass do you proceed.
 
 ## Design system — also mandatory
 
-Before writing any UI code, read `design-system.md` at the repo root and follow it: fonts,
+Before writing any UI code, read `docs/design-system.md` and follow it: fonts,
 color palette, spacing, component conventions, accessibility rules, etc. This applies even
-if the spec's UI/UX Notes section doesn't mention styling at all — `design-system.md` is the
+if the spec's UI/UX Notes section doesn't mention styling at all — `docs/design-system.md` is the
 default, the spec only overrides it where it explicitly says something different.
 
-If the spec's UI requirements conflict with `design-system.md`, do not silently pick one —
+If the spec's UI requirements conflict with `docs/design-system.md`, do not silently pick one —
 stop and flag the conflict to the human.
 
 ## Implementation

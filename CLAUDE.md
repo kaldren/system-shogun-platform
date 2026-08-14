@@ -12,7 +12,7 @@
 - `src/Backend/` — ASP.NET Core Web API.
 - `infra/` — Bicep templates and deployment config.
 - `specs/` — feature specs (see below). `specs/TEMPLATE.md` is the required shape.
-- `design-system.md` — the binding source of truth for frontend look-and-feel (fonts, colors, spacing, component conventions). The frontend agent must follow it for every UI change.
+- `docs/design-system.md` — the binding source of truth for frontend look-and-feel (fonts, colors, spacing, component conventions). The frontend agent must follow it for every UI change.
 - `docs/` — general documentation, ADRs, etc.
 - `.githooks/` — local git hooks (`pre-push` runs gitleaks and blocks pushes containing secrets; see README.md "Development setup"). Backed up server-side by `.github/workflows/secret-scan.yml` and GitHub push protection.
 
@@ -34,5 +34,5 @@ Four project subagents live in `.claude/agents/`:
 
 - **spec-writer** — writes specs, never implementation code.
 - **backend** — implements ASP.NET Core Web API work, only against an approved spec.
-- **frontend** — implements Blazor WASM work, only against an approved spec, and must follow `design-system.md`.
+- **frontend** — implements Blazor WASM work, only against an approved spec, and must follow `docs/design-system.md`.
 - **infra** — implements Bicep/Azure work, only against an approved spec.

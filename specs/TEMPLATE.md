@@ -59,7 +59,7 @@ High-level approach. Break into subsections matching `scope`:
 ## UI/UX Notes
 
 (Only if `frontend` is in scope.) Screens/components involved, states, interactions.
-Must be consistent with `design-system.md` — call out anything that isn't.
+Must be consistent with `docs/design-system.md` — call out anything that isn't.
 
 ## Infra/Deployment Notes
 

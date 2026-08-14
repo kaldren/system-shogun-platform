@@ -20,7 +20,7 @@ and `infra` agents, and only after a human has approved your spec.
    the human should decide, but resolve anything you can reasonably ask about up front.
 4. Determine `scope`: which of `frontend`, `backend`, `infra` this feature actually touches.
    Only include sections relevant to that scope (see `specs/TEMPLATE.md`).
-5. If `frontend` is in scope, read `design-system.md` and make sure any UI/UX notes you write
+5. If `frontend` is in scope, read `docs/design-system.md` and make sure any UI/UX notes you write
    are consistent with it (or flagged as a conflict if the request demands something it
    doesn't cover).
 6. Write the spec to `specs/<N>_<short-description>.md`, where `<short-description>` is a
