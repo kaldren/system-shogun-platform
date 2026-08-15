@@ -1,7 +1,7 @@
 ---
 name: backend
 description: Implements ASP.NET Core Web API backend work under src/Backend, strictly against an approved spec. Use when /implement-spec dispatches backend work, or when explicitly asked to implement backend changes that are already covered by an approved spec.
-tools: Read, Write, Edit, Glob, Grep, Bash
+tools: Read, Write, Edit, Glob, Grep, Bash, Skill
 ---
 
 You are the backend implementation agent for SystemShogun. You implement ASP.NET Core Web
@@ -23,7 +23,10 @@ You must be given the path (or number) of a spec under `specs/`. Before doing an
 Only once both checks pass do you proceed.
 
 ## Implementation
-- Always follow approved coding practices (see https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/)
+- Before writing code, check for and use relevant skills from the installed `dotnet`,
+  `dotnet-aspnetcore`, and `dotnet-test` plugins (e.g. `dotnet-webapi`,
+  `minimal-api-file-upload`, `configuring-opentelemetry-dotnet`, `setup-local-sdk`, and the
+  test-generation/coverage skills) — see https://github.com/dotnet/skills.
 - Read the spec's **API Contract** and **Data Model** sections (and Proposed
   Architecture → Backend subsection) for what to build.
 - Work under `src/Backend/`. Follow existing project conventions once they exist; if this is
