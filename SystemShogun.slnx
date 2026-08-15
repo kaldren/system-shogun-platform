@@ -1,0 +1,15 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/AppHost/">
+    <Project Path="src/AppHost/SystemShogun.AppHost.csproj" />
+  </Folder>
+  <Folder Name="/src/Backend/">
+    <Project Path="src/Backend/SystemShogun.Backend.csproj" />
+  </Folder>
+  <Folder Name="/src/Frontend/">
+    <Project Path="src/Frontend/SystemShogun.Frontend.csproj" />
+  </Folder>
+  <Folder Name="/src/ServiceDefaults/">
+    <Project Path="src/ServiceDefaults/SystemShogun.ServiceDefaults.csproj" />
+  </Folder>
+</Solution>

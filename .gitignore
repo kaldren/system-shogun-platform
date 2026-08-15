@@ -1,0 +1,16 @@
+## .NET
+bin/
+obj/
+*.user
+
+## Blazor WASM
+wwwroot/_framework/
+
+## Visual Studio / Rider
+.vs/
+.idea/
+*.suo
+
+## OS
+.DS_Store
+Thumbs.db
